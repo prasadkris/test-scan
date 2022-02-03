@@ -2,11 +2,11 @@ name: build
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 jobs:
   build:
-    name: Build
+    name: Trivy
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout code
